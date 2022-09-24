@@ -1,0 +1,41 @@
+module BWA_EXadd(clk,a,b,out);
+	input clk;
+	input [31:0] a;
+	input b;
+	output reg [31:0] out;
+	reg [5:0] i;
+	always@(posedge clk)begin
+		out[0] = !(a[0]&b);
+		out[1] = !(a[1]&b);
+		out[2] = !(a[2]&b);
+		out[3] = !(a[3]&b);
+		out[4] = !(a[4]&b);
+		out[5] = !(a[5]&b);
+		out[6] = !(a[6]&b);
+		out[7] = !(a[7]&b);
+		out[8] = !(a[8]&b);
+		out[9] = !(a[9]&b);
+		out[10] = !(a[10]&b);
+		out[11] = !(a[11]&b);
+		out[12] = !(a[12]&b);
+		out[13] = !(a[13]&b);
+		out[14] = !(a[14]&b);
+		out[15] = !(a[15]&b);
+		out[16] = !(a[16]&b);
+		out[17] = !(a[17]&b);
+		out[18] = !(a[18]&b);
+		out[19] = !(a[19]&b);
+		out[20] = !(a[20]&b);
+		out[21] = !(a[21]&b);
+		out[22] = !(a[22]&b);
+		out[23] = !(a[23]&b);
+		out[24] = !(a[24]&b);
+		out[25] = !(a[25]&b);
+		out[26] = !(a[26]&b);
+		out[27] = !(a[27]&b);
+		out[28] = !(a[28]&b);
+		out[29] = !(a[29]&b);
+		out[30] = !(a[30]&b);
+		out[31] = (a[31]&b);
+	end
+endmodule
